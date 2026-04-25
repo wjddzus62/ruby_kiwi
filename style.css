@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* 헤더 */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* 히어로 */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #fff5f0;
+}
+
+.hero img {
+    width: 300px;
+}
+
+.hero-text {
+    max-width: 400px;
+}
+
+/* 특징 */
+.features {
+    text-align: center;
+    padding: 40px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-box div {
+    font-size: 20px;
+}
+
+/* 스토리 */
+.story {
+    padding: 40px;
+    text-align: center;
+}
+
+/* 푸터 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* 📱 반응형 */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
